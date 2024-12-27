@@ -9,4 +9,4 @@ Route::get('/user', function (Request $request) {
 })->middleware(Authenticate::using('sanctum'));
 
 //posts
-Route::apiResource('/pelanggans', App\Http\Controllers\Api\PelangganController::class);
+Route::apiResource('/pelanggans', \App\Http\Controllers\Api\PelangganController::class);
